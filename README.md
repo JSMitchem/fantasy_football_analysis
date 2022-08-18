@@ -8,7 +8,7 @@
 ## Data
 
 Web Scraping
-- [Pro Football Reference](https://www.pro-football-reference.com/years/2021/advanced.htm)
+- [Pro Football Reference]('https://www.pro-football-reference.com/years/2021/fantasy.htm#')
 
 <details>
   <summary>Code used for scraping</summary>
@@ -31,6 +31,15 @@ stats = pd.DataFrame(player_stats, columns = headers)
 CSV Files
 - [Advanced Sports Analytics](advancedsportsanalytics.com/nfl-raw-data)
 - [Fantasy Pros](https://www.fantasypros.com/nfl/adp/ppr-overall.php)
+
+## Technologies Used
+
+  - Python
+    * [Jupyter Notebooks](https://jupyter.org/)
+    * [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/)
+    * [Numpy](https://numpy.org/)
+    * [Pandas](https://pandas.pydata.org/)
+    * [Requests](https://docs.python-requests.org/en/latest/)
 
 ## Main Questions
 

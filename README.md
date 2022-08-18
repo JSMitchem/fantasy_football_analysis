@@ -10,6 +10,24 @@
 Web Scraping
 - [Pro Football Reference](https://www.pro-football-reference.com/years/2021/advanced.htm)
 
+<details>
+  <summary>Code used for scraping</summary>
+
+```
+year = 2021
+req = Request('https://www.pro-football-reference.com/years/{}/fantasy.htm#'.format(year), headers={'User-Agent': 'Mozilla/5.0'})
+webpage = urlopen(req).read()
+soup = BeautifulSoup(webpage)
+headers = [th.getText() for th in soup.findAll('tr')[1].findAll('th')]
+headers = headers[1:]
+rows = soup.findAll('tr', class_ = lambda table_rows: table_rows != "thead")
+player_stats = [[td.getText() for td in rows[i].findAll('td')]
+               for i in range(len(rows))]
+player_stats = player_stats[2:]
+stats = pd.DataFrame(player_stats, columns = headers)
+```
+</details>
+
 CSV Files
 - [Advanced Sports Analytics](advancedsportsanalytics.com/nfl-raw-data)
 - [Fantasy Pros](https://www.fantasypros.com/nfl/adp/ppr-overall.php)

@@ -39,7 +39,7 @@ CSV Files
     * [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/)
     * [Numpy](https://numpy.org/)
     * [Pandas](https://pandas.pydata.org/)
-    * [Requests](https://docs.python-requests.org/en/latest/)
+    * [Requests](https://pypi.org/project/requests/)
 
 ## Main Questions
 
